@@ -8,6 +8,11 @@ public class Candidate {
 	public Candidate(){
 		
 	}
+	public Candidate(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
 	@Id
 	private int id;
 	private String name;
