@@ -1,7 +1,6 @@
 package com.hackday;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,8 +14,8 @@ public class CountingCentreController {
 	private VotingRepository votingRepositry;
 
 	@RequestMapping(value = "/count", method = RequestMethod.GET)
-	public Map<String, Integer> count() {
-		Map<String, Integer> votes = votingRepositry.getVotes();
+	public Object[] count() {
+		Object[] votes = votingRepositry.getVotes();
 		return votes;
 	}
 
