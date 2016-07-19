@@ -6,25 +6,27 @@ import javax.persistence.Id;
 @Entity
 public class Vote {
 	@Id
-	private int id;
-	
-	private int candidateId;
+	private Integer id;
 
-	public Vote(){}
-	
-	public int getId() {
+	private Integer candidateId;
+
+	public Vote() {
+	}
+
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public int getCandidateId() {
+	public Integer getCandidateId() {
 		return candidateId;
 	}
 
-	public void setCandidateId(int candidateId) {
+	public void setCandidateId(Integer candidateId) {
 		this.candidateId = candidateId;
 	}
+
 }
